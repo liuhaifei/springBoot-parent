@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xinho.springboot.mybatis.mapper.DemoMapper" >
+
+    <select id="getAll" resultType="com.xinho.springboot.mybatis.model.UserStoreEntity">
+        SELECT s.user_id as 'userId',
+			 s.created_date as 'createdDate',
+		   s.store_id AS 'storeId'
+        FROM user_store s
+    </select>
+
+</mapper>
